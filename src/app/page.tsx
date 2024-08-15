@@ -14,7 +14,7 @@ export default function Home() {
 			>
 				psst... hover over me :3
 			</p>
-			<p className={"absolute text-center text-base bottom-6"}>
+			<p className={"absolute text-center text-base sm:bottom-6"}>
 				<i>
 					pfp by <Link href="https://twitter.com/etunisgood2">etun</Link>!!
 				</i>
