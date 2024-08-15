@@ -8,11 +8,16 @@ export default function Home() {
 	const [hover, setHover] = useState(false);
 
 	return (
-		<main className="flex min-h-screen flex-col p-6">
+		<main className="flex min-h-screen flex-col items-center p-6">
 			<p
 				className={`relative text-center text-sm top-64 ${hover ? "opacity-0" : "opacity-100"} transition duration-300 ease-out`}
 			>
 				psst... hover over me :3
+			</p>
+			<p className={"absolute text-center text-base bottom-6"}>
+				<i>
+					pfp by <Link href="https://twitter.com/etunisgood2">etun</Link>!!
+				</i>
 			</p>
 			<div
 				className="relative flex flex-col items-center mx-auto w-1/2 h-1/2"
