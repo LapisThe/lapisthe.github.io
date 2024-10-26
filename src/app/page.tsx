@@ -10,19 +10,19 @@ export default function Home() {
 
 	return (
 		<BackgroundBeamsWithCollision>
-			<main className="flex h-screen w-screen flex-col items-center p-6">
+			<main className="flex h-screen w-screen flex-col justify-center items-center gap-6 p-6">
 				<p
-					className={`relative text-center text-sm top-64 ${hover ? "opacity-0" : "opacity-100"} transition duration-300 ease-out`}
+					className={`relative text-center text-sm md:text-base ${hover ? "opacity-0" : "opacity-100"} transition duration-300 ease-out`}
 				>
 					psst... hover over me :3
 				</p>
-				<p className={"absolute text-center text-sm md:text-base"}>
+				<p className={"absolute top-0 text-center text-sm md:text-base"}>
 					<i>
 						pfp by <Link href="https://twitter.com/etunisgood2">etun</Link>!!
 					</i>
 				</p>
 				<div
-					className="relative flex flex-col mt-72 items-center mx-auto w-full md:w-1/2 h-1/2"
+					className="relative flex flex-col items-center mx-auto w-full md:w-1/2 h-1/2"
 					onMouseEnter={() => setHover(true)}
 					onMouseLeave={() => setHover(false)}
 				>
