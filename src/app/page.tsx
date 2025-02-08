@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { BackgroundBeamsWithCollision } from "./ui/background-beams-with-collission";
+import { BackgroundBeamsWithCollision } from "./ui/background-beams-with-collision";
 
 export default function Home() {
 	const [hover, setHover] = useState(false);
@@ -16,7 +16,7 @@ export default function Home() {
 				>
 					psst... hover over me :3
 				</p>
-				<p className={"absolute top-0 text-center text-sm md:text-base"}>
+				<p className={"absolute top-4 text-center text-sm md:text-base"}>
 					<i>
 						pfp by <Link href="https://twitter.com/etunisgood2">etun</Link>!!
 					</i>
