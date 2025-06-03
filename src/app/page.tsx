@@ -12,7 +12,7 @@ export default function Home() {
 		<BackgroundBeamsWithCollision>
 			<main className="flex h-screen w-screen flex-col justify-center items-center gap-6 p-6">
 				<p
-					className={`relative text-center text-sm md:text-base ${hover ? "opacity-0" : "opacity-100"} transition duration-300 ease-out`}
+					className={`text-center text-sm md:text-base ${hover ? "opacity-0" : "opacity-100"} transition duration-300 ease-out`}
 				>
 					psst... hover over me :3
 				</p>
@@ -22,12 +22,12 @@ export default function Home() {
 					</i>
 				</p>
 				<div
-					className="relative flex flex-col items-center mx-auto w-full md:w-1/2 h-1/2"
+					className="flex flex-col items-center w-full md:w-1/2 h-1/2"
 					onMouseEnter={() => setHover(true)}
 					onMouseLeave={() => setHover(false)}
 				>
 					<Image
-						className={`relative z-10 w-60 h-auto object-cover ${hover ? "scale-90 -translate-y-32" : "scale-100 translate-y-0"} rounded-xl transition duration-1000 ease-out`}
+						className={`z-10 w-60 h-auto object-cover ${hover ? "scale-90 -translate-y-32" : "scale-100 translate-y-0"} rounded-xl transition duration-1000 ease-out`}
 						src="/lapis_transparent.png"
 						width={500}
 						height={500}
