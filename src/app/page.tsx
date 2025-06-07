@@ -36,7 +36,7 @@ export default function Home() {
 						alt="me"
 					/>
 					<div
-						className={`relative flex flex-col bottom-28 gap-2 items-center text-center text-xl/8 w-full md:w-2/3 ${hover ? "translate-y-0 opacity-100" : "-translate-y-8 opacity-0"} transition duration-1000 ease-out`}
+						className={`relative flex flex-col bottom-28 gap-2 items-center text-center text-base/8 md:text-xl/8 w-full md:w-2/3 ${hover ? "translate-y-0 opacity-100" : "-translate-y-8 opacity-0"} transition duration-1000 ease-out`}
 					>
 						<p className="text-xl md:text-2xl">
 							<b>Lapis Wolf</b>
@@ -48,7 +48,7 @@ export default function Home() {
 							👋 Hiya, I&apos;m Lapis!
 							<br />
 							I&apos;m quite the aviation geek, aspiring software engineer, and{" "}
-							<span className="text-sm">tiny</span> indie game developer!
+							<span className="text-xs md:text-sm">tiny</span> indie game developer!
 						</p>
 						<hr
 							className={`${hover ? "w-72 md:w-96" : "w-0"} transition-all delay-200 duration-1000 ease-out`}
