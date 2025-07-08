@@ -24,24 +24,24 @@ export default function Home() {
 					onMouseLeave={() => setHover(false)}
 				>
 					<p
-						className={`p-4 text-center text-sm md:text-base ${hover ? "opacity-0" : "opacity-100"} transition duration-300 ease-out`}
+						className={`p-4 text-center text-xs md:text-sm ${hover ? "opacity-0" : "opacity-100"} transition duration-300 ease-out`}
 					>
 						Psst... Hover over me!
 					</p>
 					<Image
-						className={`z-10 w-60 h-auto object-cover ${hover ? "scale-90 -translate-y-32" : "scale-100 translate-y-0"} rounded-xl transition duration-1000 ease-out`}
+						className={`z-10 w-48 h-auto object-cover ${hover ? "scale-90 -translate-y-32" : "scale-100 translate-y-0"} rounded-xl transition duration-1000 ease-out`}
 						src="/lapis_transparent.png"
 						width={500}
 						height={500}
 						alt="me"
 					/>
 					<div
-						className={`relative flex flex-col bottom-28 gap-2 items-center text-center text-base/8 md:text-xl/8 w-full md:w-2/3 ${hover ? "translate-y-0 opacity-100" : "-translate-y-8 opacity-0"} transition duration-1000 ease-out`}
+						className={`relative flex flex-col bottom-28 gap-2 items-center text-center text-sm/8 md:text-base/8 w-full md:w-2/3 ${hover ? "translate-y-0 opacity-100" : "-translate-y-8 opacity-0"} transition duration-1000 ease-out`}
 					>
-						<p className="text-xl md:text-2xl">
+						<p className="text-lg md:text-xl">
 							<b>Lapis Wolf</b>
 						</p>
-						<p className="text-sm md:text-base">@lapisw / @lapisthe</p>
+						<p className="text-xs md:text-sm">@lapisw / @lapisthe</p>
 						<p className="text-xs">📍 Seattle, WA</p>
 						<hr className={`${hover ? "w-44 md:w-52" : "w-0"} transition-all duration-1000 ease-out`} />
 						<p>
@@ -54,7 +54,7 @@ export default function Home() {
 							className={`${hover ? "w-72 md:w-96" : "w-0"} transition-all delay-200 duration-1000 ease-out`}
 						/>
 						<p>See me on...</p>
-						<ul className="space-y-2">
+						<ul className="space-y-0.5">
 							<li>
 								<FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>{" "}
 								<Link href="https://github.com/LapisThe">GitHub</Link>
