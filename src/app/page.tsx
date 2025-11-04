@@ -11,12 +11,10 @@ export default function Home() {
 	const [hover, setHover] = useState(false);
 
 	return (
-		<BackgroundBeamsWithCollision>
-			<main className="flex h-screen w-screen flex-col justify-center items-center p-8">
+		<main>
+			<BackgroundBeamsWithCollision className="flex h-[93vh] md:h-[94vh] w-screen flex-col justify-center items-center p-8">
 				<p className={"absolute top-4 text-center text-sm md:text-base"}>
-					<i>
-						Profile pic. by <Link href="https://twitter.com/etunisgood2">Etun</Link>
-					</i>
+					<i></i>
 				</p>
 				<div
 					className="flex flex-col items-center w-full md:w-1/2 h-1/2"
@@ -70,7 +68,15 @@ export default function Home() {
 						</ul>
 					</div>
 				</div>
-			</main>
-		</BackgroundBeamsWithCollision>
+			</BackgroundBeamsWithCollision>
+			<footer>
+				<div className="h-[7vh] md:h-[6vh] w-screen bg-gray-900 flex flex-col items-center justify-center p-4">
+					<p className="text-sm text-gray-200">
+						Profile picture by <Link href="https://twitter.com/etunisgood2">etunisgood</Link>!
+					</p>
+					<p className="text-sm text-gray-500">© 2025 LapisThe.</p>
+				</div>
+			</footer>
+		</main>
 	);
 }
