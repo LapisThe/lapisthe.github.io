@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { BackgroundBeamsWithCollision } from "./ui/background-beams-with-collision";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBluesky, faGithub, faSteam } from "@fortawesome/free-brands-svg-icons";
+import { faBluesky, faDiscord, faGithub, faSteam } from "@fortawesome/free-brands-svg-icons";
 
 export default function Home() {
 	const [hover, setHover] = useState(false);
@@ -39,7 +39,9 @@ export default function Home() {
 						<p className="text-lg md:text-xl">
 							<b>Lapis Wolf</b>
 						</p>
-						<p className="text-xs md:text-sm">@lapisw / @lapisthe</p>
+						<p className="text-sm md:text-base">
+							<FontAwesomeIcon icon={faDiscord}></FontAwesomeIcon> @lapisw
+						</p>
 						<p className="text-xs">📍 Seattle, WA</p>
 						<hr className={`${hover ? "w-44 md:w-52" : "w-0"} transition-all duration-1000 ease-out`} />
 						<p>
