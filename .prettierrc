@@ -2,5 +2,14 @@
 	"printWidth": 120,
 	"tabWidth": 4,
 	"trailingComma": "all",
-	"useTabs": true
+	"useTabs": true,
+	"overrides": [
+		{
+			"files": ["**/*.json", "**/*.{yml,yaml}"],
+			"options": {
+				"tabWidth": 2,
+				"useTabs": false
+			}
+		}
+	]
 }

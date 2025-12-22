@@ -1,8 +1,4 @@
-"use client";
-
 import { useState } from "react";
-import Image from "next/image";
-import Link from "next/link";
 import { BackgroundBeamsWithCollision } from "./ui/background-beams-with-collision";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBluesky, faDiscord, faGithub, faSteam } from "@fortawesome/free-brands-svg-icons";
@@ -11,7 +7,7 @@ export default function Home() {
 	const [hover, setHover] = useState(false);
 
 	return (
-		<main>
+		<main className="font-[JetBrains_Mono] antialiased">
 			<BackgroundBeamsWithCollision className="flex h-[93vh] md:h-[94vh] w-screen flex-col justify-center items-center p-8">
 				<p className={"absolute top-4 text-center text-sm md:text-base"}>
 					<i></i>
@@ -26,9 +22,9 @@ export default function Home() {
 					>
 						Psst... Hover over me!
 					</p>
-					<Image
+					<img
 						className={`z-10 w-48 h-auto object-cover ${hover ? "scale-90 -translate-y-32" : "scale-100 translate-y-0"} rounded-xl transition duration-1000 ease-out`}
-						src="/lapis_transparent.png"
+						src={new URL("./assets/lapis_transparent.png", import.meta.url).href}
 						width={500}
 						height={500}
 						alt="me"
@@ -57,15 +53,15 @@ export default function Home() {
 						<ul className="space-y-0.5">
 							<li>
 								<FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>{" "}
-								<Link href="https://github.com/LapisThe">GitHub</Link>
+								<a href="https://github.com/LapisThe">GitHub</a>
 							</li>
 							<li>
 								<FontAwesomeIcon icon={faSteam}></FontAwesomeIcon>{" "}
-								<Link href="https://steamcommunity.com/id/lapisyuh">Steam</Link>
+								<a href="https://steamcommunity.com/id/lapisyuh">Steam</a>
 							</li>
 							<li>
 								<FontAwesomeIcon icon={faBluesky}></FontAwesomeIcon>{" "}
-								<Link href="https://bsky.app/profile/lapisthe.bsky.social">Bluesky</Link>
+								<a href="https://bsky.app/profile/lapisthe.bsky.social">Bluesky</a>
 							</li>
 						</ul>
 					</div>
@@ -74,7 +70,7 @@ export default function Home() {
 			<footer>
 				<div className="h-[7vh] md:h-[6vh] w-screen bg-gray-900 flex flex-col items-center justify-center p-4">
 					<p className="text-sm text-gray-200">
-						Profile picture by <Link href="https://twitter.com/etunisgood2">etunisgood</Link>!
+						Profile picture by <a href="https://twitter.com/etunisgood2">etunisgood</a>!
 					</p>
 					<p className="text-sm text-gray-500">© 2025 LapisThe.</p>
 				</div>
