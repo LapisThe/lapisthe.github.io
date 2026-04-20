@@ -1,14 +1,14 @@
 import { useState } from "react";
 import { BackgroundBeamsWithCollision } from "./ui/background-beams-with-collision";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBluesky, faDiscord, faGithub, faSteam } from "@fortawesome/free-brands-svg-icons";
+import { faDiscord, faGithub, faSteam } from "@fortawesome/free-brands-svg-icons";
 
 export default function Home() {
 	const [hover, setHover] = useState(false);
 
 	return (
 		<main className="font-[JetBrains_Mono] antialiased">
-			<BackgroundBeamsWithCollision className="flex h-[93vh] md:h-[94vh] w-screen flex-col justify-center items-center p-8">
+			<BackgroundBeamsWithCollision className="flex h-screen w-screen flex-col justify-center items-center p-8">
 				<p className={"absolute top-4 text-center text-sm md:text-base"}>
 					<i></i>
 				</p>
@@ -59,22 +59,18 @@ export default function Home() {
 								<FontAwesomeIcon icon={faSteam}></FontAwesomeIcon>{" "}
 								<a href="https://steamcommunity.com/id/lapisyuh">Steam</a>
 							</li>
-							<li>
-								<FontAwesomeIcon icon={faBluesky}></FontAwesomeIcon>{" "}
-								<a href="https://bsky.app/profile/lapisthe.bsky.social">Bluesky</a>
-							</li>
 						</ul>
 					</div>
 				</div>
+				<footer className="absolute bottom-0">
+					<div className="h-[7vh] md:h-[6vh] w-screen flex flex-col items-center justify-center p-4">
+						<p className="text-sm text-gray-300">
+							Profile picture by <a href="https://twitter.com/etunisgood2">etunisgood</a>
+						</p>
+						<p className="text-sm text-gray-400">© 2025-2026 LapisThe.</p>
+					</div>
+				</footer>
 			</BackgroundBeamsWithCollision>
-			<footer>
-				<div className="h-[7vh] md:h-[6vh] w-screen bg-gray-900 flex flex-col items-center justify-center p-4">
-					<p className="text-sm text-gray-200">
-						Profile picture by <a href="https://twitter.com/etunisgood2">etunisgood</a>!
-					</p>
-					<p className="text-sm text-gray-500">© 2025 LapisThe.</p>
-				</div>
-			</footer>
 		</main>
 	);
 }
