@@ -27,17 +27,15 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v5
 
-      - name: Set up Node
-        uses: actions/setup-node@v6
+      - name: Set up PNPM
+        uses: pnpm/setup@v1
         with:
-          node-version: "lts/*"
-          cache: "npm"
-
-      - name: Installing my packages
-        run: npm ci
+          version: 11
+          runtime: node@22
+          cache: true
 
       - name: Build my App
-        run: npm run build
+        run: pnpm build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
@@ -47,4 +45,3 @@ jobs:
       - name: Deploy 🚀
         id: deployment
         uses: actions/deploy-pages@v4
-
